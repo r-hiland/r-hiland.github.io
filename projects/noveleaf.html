@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiland.dev</title>
+
+
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Web Dev Starter" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+
+    <!-- Stylesheets -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Baseline Styling -->
+    <link rel="stylesheet" href="../base.css">
+    <!-- Specific Elements -->
+    <link rel="stylesheet" href="../style.css">
+
+    <!-- JavaScript -->
+    <script src="../script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="titlebar">
+            <!-- TODO: get rid of repeat -->
+            <div class="desktop-view">
+                <div class="pages"></div>
+            </div>
+
+            <div id="mobile-menu-button">
+                <label for="toggle" id="mobile-menu-button-open">Open</label>
+                <input type="checkbox" id="toggle">
+                <div class="mobile-menu" id="mobile-menu">
+                    <label for="toggle" id="mobile-menu-button-close">Close</label>
+                    <div class="pages"></div>
+
+                </div>
+            </div>
+            <!-- dynamically generate external links from JSON file -->
+            <ul id="myLinks"></ul>
+
+        </div>
+
+
+
+        <div class="hero">
+            <img id="profilepic" src="../profilepic.jpeg" alt="Itsa me">
+        </div>
+
+        <h2>Noveleaf:<br>Library management system</h2>
+        <div class="content">
+            <div style="display: flex; justify-content: center; align-items: center; width: 30em; height: auto; aspect-ratio: 16/9; margin: auto auto; max-width: 85vw;">
+                <iframe width=100% height=100% src="https://www.youtube.com/embed/Zd_yYzRrsW0" title="noveleaf demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>This project was part of a team assignment for our Software Development Principles course. During the
+                website's design phase, our team collaboratively developed structural models and activity diagrams to
+                ensure a cohesive design.</p>
+            <p>
+                For my role in the project, I was responsible for designing the website's layout and implementing key
+                functionalities related to the "Read List" and "Want to Read" features. I did not contribute to the
+                development of preferences, recommendations, or the New York Times Best Sellers features, as those were
+                handled by other team members.
+            </p>
+            <h3>My Contributions:</h3>
+
+            <ul>
+                <li>Website Design: Created the overall visual structure and user interface.</li>
+                <li>Website Layout: Organized the front-end layout to ensure usability and a seamless user experience.
+                </li>
+                <li>Backend Logic: Developed the backend functionality for managing book objects in Java.</li>
+                <li>Database Management: Initialized and maintained the MySQL database, ensuring efficient data handling
+                    and
+                    storage.</li>
+                <li>Search Functionality:
+                    <ul>
+                        <li>Integrated an API to fetch book data, which I converted into Java objects to be rendered via
+                            Thymeleaf.</li>
+                        <li>Managed interactions with the "Want to Read" and "Read" lists, passing book objects to the
+                            database as
+                            necessary.</li>
+                    </ul>
+                </li>
+                <li>"Read Books" Feature:
+                    <ul>
+                        <li>Retrieved book data from the database and converted it into Java objects for display.</li>
+                        <li>Integrated functionality for users to rate books, updating the database with new ratings.
+                        </li>
+                    </ul>
+                </li>
+                <li>"Want to Read Books" Feature:
+                    <ul>
+                        <li>Implemented similar functionality as the "Read Books" feature, excluding the rating logic.
+                        </li>
+                    </ul>
+                </li>
+                <li>"Most Read Books in the Last 7 Days" Feature:
+                    <ul>
+                        <li>Queried the database for books read in the last seven days, sorted them by frequency, and
+                            displayed the top
+                            seven results.</li>
+
+                    </ul>
+                </li>
+            </ul>
+
+
+
+
+
+
+
+
+            </p>
+        </div>
+
+
+
+
+    </main>
+
+    <footer>
+        © 2024 Wendel Reed Hiland III
+    </footer>
+
+</body>
+
+
+
+</html>

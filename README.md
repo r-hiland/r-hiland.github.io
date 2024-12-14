@@ -1,12 +1,21 @@
-# web-dev-starter
+# Reed Hiland Landing Page
 
-boilerplate for static websites.
+> Make your own landing page with your own content, and design.
 
-## What is this?
+## What Is This? 
+My DIY Landing Page with these features. 
 
-* Starting point for static websites
+* My content. My design.
+* Customizable and persistent URLs
+* Portable. Take it to any web host.
+* Future proof, and easy to maintain. You own the code via GitHub
+* Secure, and scalable to many CDNs worldwide via Netlify, Vercel, etc.
 
-## How do I use this?
+## Sources
+* [Google fonts](https://fonts.google.com/)
+* [Real Favicon Generator](https://realfavicongenerator.net/)
 
-* Clone this repo
-*
+## Why Does This Exist? 
+Many services offer a single-page-landing. These "web portals" have existed for decades before [Linktree](https://linktr.ee/), [About.Me](https://about.me), [Card](https://carrd.co/), etc.
+
+There are too many services to choose from. Each one has minor differences, and benefits with premium paid upgrades. 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiland.dev</title>
+
+
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Web Dev Starter" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+
+    <!-- Stylesheets -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Baseline Styling -->
+    <link rel="stylesheet" href="base.css">
+    <!-- Specific Elements -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <main>
+
+            <div class="titlebar">
+                <!-- TODO: get rid of repeat -->
+                <div class="desktop-view">
+                    <div class="pages"></div>
+                </div>
+                <div id="mobile-menu-button">
+                    <label for="toggle" id="mobile-menu-button-open">Open</label>
+                    <input type="checkbox" id="toggle">
+                    <div class="mobile-menu" id="mobile-menu">
+                        <label for="toggle" id="mobile-menu-button-close">Close</label>
+                        <div class="pages"></div>
+
+                    </div>
+                </div>
+                <!-- dynamically generate external links from JSON file -->
+                <ul id="myLinks"></ul>
+
+            </div>
+
+
+            <div class="frontpage">
+        <div class="hero">
+
+            <img id="profilepic" src="profilepic.jpeg" alt="Itsa me">
+            <h1>Hello,<br>I'm Reed</h1>
+            <p id="miniabout">Hi there! I'm a software engineering student at Eastern Washington University, with
+                experience in full stack web development and embedded programming. My main interests lie in back-end
+                development...</p>
+            <a href="/aboutme.html" id="miniabout-button">Read more about me</a>
+        </div>
+    </div>
+
+        <h2>Projects</h2>
+
+        <ul id="project-cards">
+            <li class="project-card">
+                <img class="project-card-backdrop" src="/img/projects/noveleaf/screenshot.png" alt="Project 1">
+                <p class="project-card-title">Library Management System - Full Stack Project</p>
+                <p class="project-card-description">
+                    • Developed a web-based library management system using Spring MVC for the backend
+                    and Thymeleaf for the frontend.<br>
+                    • Integrated MySQL to store user profiles, book details, and ratings, managing queries with
+                    both JPL and traditional SQL.<br>
+                    • Utilized external book APIs to fetch and display real-time book data, with objects stored
+                    locally in a MariaDB database.<br>
+                    • Used Maven to build and host the project.<br>
+                    <a href="https://github.com/Sanmeet-EWU/github-teams-project-bid-powerpuf-squirrels/tree/main"
+                        class="project-readmore">Read more</a>
+                </p>
+            </li>
+            <li class="project-card">
+                <img class="project-card-backdrop" src="/img/projects/thissite/screenshot.png" alt="Project 1">
+                <p class="project-card-title">Hiland.dev - This site</p>
+                <p class="project-card-description">
+                    • My content. My design.<br>
+                    • Responsive design for all devices.<br>
+                    • Customizable and persistent URLs<br>
+                    • Portable. Take it to any web host.<br>
+                    • Future proof, and easy to maintain. You own the code via GitHub<br>
+                    • Secure, and scalable to many CDNs worldwide via Netlify, Vercel, etc.<br>
+                    <a href="https://github.com/r-hiland/landing-page" class="project-readmore">Read more</a>
+                </p>
+            </li>
+            <li class="project-card">
+                <img class="project-card-backdrop" src="/img/projects/seniorproject/coding.jpg" alt="Project 1">
+                <p class="project-card-title">Senior Project</p>
+                <p class="project-card-description">
+                    Senior project will be starting in winter 2025, and will conclude in the spring. Check back for more
+                    details about my progress!
+                    <a href="https://github.com/r-hiland/landing-page" class="project-readmore">Read more</a>
+                </p>
+            </li>
+        </ul>
+
+
+
+
+
+
+    </main>
+
+    <footer>
+        © 2024 Wendel Reed Hiland III
+    </footer>
+
+</body>
+
+
+
+</html>

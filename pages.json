@@ -1,0 +1,26 @@
+{
+"pages": [
+    {
+    "name": "Home",
+    "url": "/"
+    },
+    {
+    "name": "Projects",
+    "url": "/projects"
+    },
+    
+    {
+    "name": "About Me",
+    "url": "/aboutme"
+    },
+    {
+        "name": "Skills",
+        "url": "/skills"
+    },
+    {
+        "name": "Contact me",
+        "url": "mailto:reed@hiland.dev"
+    }
+    
+    ]
+}

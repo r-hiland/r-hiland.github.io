@@ -1,0 +1,23 @@
+{
+"myLinks": [
+    {
+    "name": "github",
+    "url": "https://github.com/r-hiland"
+    },
+    {
+    "name": "linkdin",
+    "url": "https://www.linkedin.com/in/wendel-hiland/"
+    },
+    
+    {
+    "name": "codepen",
+    "url": "https://codepen.io/r-hiland"
+    },
+    {
+        "name": "résumé",
+        "url": "/resume.html"
+    }
+    
+    
+    ]
+}

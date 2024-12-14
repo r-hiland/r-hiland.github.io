@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hiland.dev</title>
+
+
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" href="/favicons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Web Dev Starter" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+
+    <!-- Stylesheets -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Baseline Styling -->
+    <link rel="stylesheet" href="base.css">
+    <!-- Specific Elements -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <script src="projects.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="projects.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="titlebar">
+            <!-- TODO: get rid of repeat -->
+            <div class="desktop-view">
+                <div class="pages"></div>
+            </div>
+
+            <div id="mobile-menu-button">
+                <label for="toggle" id="mobile-menu-button-open">Open</label>
+                <input type="checkbox" id="toggle">
+                <div class="mobile-menu" id="mobile-menu">
+                    <label for="toggle" id="mobile-menu-button-close">Close</label>
+                    <div class="pages"></div>
+
+                </div>
+            </div>
+            <!-- dynamically generate external links from JSON file -->
+            <ul id="myLinks"></ul>
+
+        </div>
+
+
+
+        <div class="hero">
+
+            <img id="profilepic" src="profilepic.jpeg" alt="Itsa me">
+        </div>
+
+        <h2>Projects</h2>
+        <div class="content">
+
+            <div class="filter-section">
+                <ul id="tag-list">
+                    <li data-tag="all" class="active">Reset filter</li>
+                </ul>
+                <ul id="tag-list">Languages:
+                    <li data-tag="Java">Java</li>
+                    <li data-tag="Python">Python</li>
+                    <li data-tag="C">C</li>
+                    <li data-tag="HTML">HTML</li>
+                    <li data-tag="CSS">CSS</li>
+                    <li data-tag="JavaScript">JavaScript</li>
+                    <li data-tag="Assembly">Assembly</li>                    
+                </ul>
+                <ul id="tag-list">Tools:
+                    <li data-tag="SpringMVC">Spring MVC</li>
+                    <li data-tag="Thymeleaf">Thymeleaf</li>
+                    <li data-tag="MySQL">MySQL</li>
+                    <li data-tag="Flask">Flask</li>
+                    <li data-tag="AWS">AWS</li>
+
+                </ul>
+            </div>
+
+            <div id="project-list">
+
+
+
+
+                <div class="project" data-tags="Java SpringMVC Thymeleaf MySQL HTML CSS JavaScript">
+                    <ul id="tag-list">
+                        <li data-tag="Java">Java</li>
+                        <li data-tag="SpringMVC">Spring MVC</li>
+                        <li data-tag="Thymeleaf">Thymeleaf</li>
+                        <li data-tag="MySQL">MySQL</li>
+                        <li data-tag="HTML">HTML</li>
+                        <li data-tag="CSS">CSS</li>
+                        <li data-tag="JavaScript">JavaScript</li>
+                    </ul>
+                    <a href="/projects/noveleaf.html">
+                        <img src="/img/projects/noveleaf/screenshot.png" alt="noveleaf">
+                        <h3>Library Management System - Full Stack Project</h2>
+                            <p>project using java. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                                praesentium eaque illo, enim aut ratione! Ratione laudantium harum voluptatibus quos.
+                                Dolorem ducimus voluptas cum earum nemo voluptatibus nulla exercitationem eos!</p>
+
+                </div>
+                </a>
+
+
+
+
+                <div class="project" data-tags="HTML CSS JavaScript">
+                    <ul id="tag-list">
+                        <li data-tag="HTML">HTML</li>
+                        <li data-tag="CSS">CSS</li>
+                        <li data-tag="JavaScript">JavaScript</li>
+                    </ul>
+                    <a href="/projects/noveleaf.html">
+                        <img src="/img/projects/thissite/screenshot.png" alt="Project 1">
+                        <h3>Hiland.dev - This site</h2>
+                            <p>project using java. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore
+                                praesentium eaque illo, enim aut ratione! Ratione laudantium harum voluptatibus quos.
+                                Dolorem ducimus voluptas cum earum nemo voluptatibus nulla exercitationem eos!</p>
+                </div>
+                </a>
+
+
+
+
+                <div class="project" data-tags="Python Flask">
+
+                    <ul id="tag-list">
+                        <li data-tag="Python">Python</li>
+                        <li data-tag="Flask">Flask</li>
+                    </ul>
+                    <a href="/projects/noveleaf.html">
+                        <img src="https://miro.medium.com/v2/resize:fit:640/1*dKU4uBSnJCs4jzkkuiALoQ.png">
+                        <h3>Web API Server</h2>
+                            <p>Built a Flask-based web server to handle API requests for whois lookups and weather data, using caching for performance.<br><br></p>
+                </div>
+                </a>
+
+
+
+                <div class="project" data-tags="Assembly C">
+                    <ul id="tag-list">
+                        <li data-tag="Assembly">Assembly</li>
+                        <li data-tag="C">C</li>
+                    </ul>
+                    <a href="/projects/noveleaf.html">
+                        <img src="/img/projects/color tuner/screenshot.png">
+                        <h3>Color Tuner </h2>
+                            <p>Coded on Texas Instruments SOAC boards using C to control PWMs, 7-segment displays, and LEDs. The color tuner allowed users to adjust the intensity of red, green, and blue LEDs.<br></p>
+                </div>
+                </a>
+            </div>
+
+
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        © 2024 Wendel Reed Hiland III
+    </footer>
+
+</body>
+
+
+
+</html>

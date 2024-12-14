@@ -1,7 +1,591 @@
-body {
-    background: grey;
+/* Have fun. This is your site. */
+
+/* Magical debug tool */
+/* * {
+  outline: 1px solid red;
+} */
+
+
+HTML body {
+  background: #1a2226;
+
+  /* The background just makes the site look a little dated */
+
+  /* background-image: url('img/wallpaper.png');
+background-size: 100% auto;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: bottom; */
+
+  /* font-family: "Rajdhani", sans-serif; */
+  font-family: Arial;
+  font-weight: 300;
+  font-style: normal;
+  color: #e9f5ff;
 }
 
+/* Main Container */
+main {
+  width: 100%;
+  /* centers container to page */
+  margin-inline: auto;
+
+  /* adjust to your design */
+  max-width: 90em;
+  background: #111518;
+  min-height: 95vh;
+
+  /* shadow */
+  box-shadow: 0 0 0.1em #ff00ea70, 0 0 0.1em #2600ff70;
+}
+
+footer {
+  color: #e9f5ff;
+  text-align: center;
+  padding: 1em;
+  font-size: 0.6em;
+  font-weight: 100;
+
+}
+
+
+a {
+  color: #009dc4;
+}
+
+a:hover {
+  color: #f5efff;
+  text-shadow:
+  0 0 1px #009dc4,
+  0 0 1px #009dc4,
+  0 0 1px #009dc4,
+  0 0 1px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4;
+}
+
+
+/* ======================================== */
+/*                TITLE BAR                 */
+/* ======================================== */
+
+/* currentpage will probably not be the final solution, more for wireframing */
+#currentpage {
+  font-weight: 400;
+  font-size: 1.75em;
+  color: #e9f5ff;
+  text-shadow:
+    0 0 1px #009dc4,
+    0 0 2px #009dc4,
+    0 0 2px #009dc4,
+    0 0 2px #009dc4,
+    0 0 3px #009dc4,
+    0 0 3px #009dc4,
+    0 0 2px #009dc4;
+}
+
+.socials-container {
+  margin-left: auto;
+  display: flex;
+  margin-right: 1em;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  /* Vertically aligns social links */
+  margin-left: 1em;
+  /* Space between social links */
+  color: #f5efff;
+  text-decoration: none;
+}
+
+.titlebar {
+  height: 4.5em;
+  padding: 0%;
+
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  width: 100%;
+
+}
+
+.titlebutton {
+  font-weight: 450;
+  color: #f5efff;
+  font-size: 1.25em;
+
+
+  /* no underline */
+  text-decoration: none;
+
+  margin-left: 0.8em;
+
+
+}
+
+.titlebutton:hover {
+  /* underline on hover 3px below it */
+  text-decoration: underline;
+  text-decoration-thickness: 0.1em;
+  text-shadow: none;
+
+}
+
+#github {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/github.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  filter: invert(1);
+  margin-top: 0.4em;
+}
+
+#linkdin {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/linkdin.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  filter: invert(1);
+  margin-top: 0.4em;
+}
+
+#codepen {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('/icons/codepen.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  filter: invert(1);
+  margin-top: 0.4em;
+
+  
+}
+
+#résumé {
+  font-weight: 300;
+  font-size: 1em;
+  background-color: transparent;
+  border-radius: 4em;
+  border: 1px solid #767678;
+  /* display:inline-block; */
+  cursor: pointer;
+  color: #dbd9d9;
+
+  /* font-size:17px; */
+  padding: 0.3em 1em;
+  text-decoration: none;
+
+
+  box-shadow: 2px -2px 0.4em #40298c, -2px 2px 0.4em #7b298c;
+  box-shadow: 1px -1px 0.15em #3c00ffb6, -1px 1px 0.15em #d400ffb6;
+
+
+  text-shadow:
+    /* -1px -1px 0 #ffffff50,  
+  1px -1px 0 #ffffff50,
+  -1px  1px 0 #ffffff50,
+  1px  1px 0 #ffffff50, */
+    0.08em -0.08em 0 #40298c,
+    -0.05em 0.05em 0 #7b298c;
+  /* Multiple shadows to create outline */
+
+  z-index: 2;
+
+  
+
+
+}
+
+/* ======================================== */
+/*                  HERO                    */
+/* ======================================== */
+
+.hero {
+  background-color: #0e0e0d;
+  background-image: url('lakevalhala2-tmp.jpg');
+
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%); */
+
+
+  background-position: center;
+
+  background-size: cover;
+  height: 12em;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+
+
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: rgb(123, 41, 140) 0px 26px 20px -20px inset, 
+  rgb(17, 21, 24) 0px -230px 50px -200px inset, 
+  rgb(17, 21, 24) 0px -230px 50px -200px inset;
+
+  z-index: 1;
+
+}
+
+.frontpage .hero {
+  height: 28em;
+}
+
+
+
+#profilepic {
+  border-radius: 50%;
+  /* scale: 50%; */
+  width: 9em;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+  border: 0.13em solid #ceaaf0;
+  /* box-shadow: 
+  0 0 1em #7c00c4,
+  0 0 6em #7c00c4; */
+
+  position: relative;
+  box-shadow: 1.5em -1.5em 4em #0023e654, -1.5em 1.5em 4em #de00e654;
+
+}
+
+.frontpage #profilepic {
+  width: 17.7em;
+}
+
+#miniabout {
+  font-weight: 500;
+  font-size: 0.7em;
+  text-align: left;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 20em;
+
+  position: absolute;
+  top: 55%;
+  left: 69.6%;
+  /* transform: translate(-50%, -50%); */
+
+}
+
+#miniabout-button {
+  font-weight: 500;
+  font-size: 0.7em;
+  background: linear-gradient(to bottom, #839cfe 5%, #51619e 100%);
+  background-color: #839cfe;
+  border-radius: 4em;
+  border: 1px solid #233385;
+  /* display:inline-block; */
+  cursor: pointer;
+  color: #ffffff;
+  /* font-size:17px; */
+  padding: 0.7em 1em;
+  text-decoration: none;
+  /* text-shadow:0px 1px 0px #000000; */
+
+  position: absolute;
+  top: 77%;
+  left: 69.6%;
+
+  z-index: 2;
+  text-shadow: none;
+}
+
+.mobile-view {
+  display: none;
+}
+
+
+
+
+/* h1 {
+  font-weight: 400;
+  text-align: left;
+  color: #e9f5ff; 
+  text-transform: uppercase;
+  text-shadow:
+  0 0 1px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 2px #009dc4,
+  0 0 3px #009dc4,
+  0 0 3px #009dc4,
+  0 0 2px #009dc4;
+
+  position: absolute;
+  top: 20%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  
+} */
+
 h1 {
-    color: white;
+  font-size: 3em;
+  font-weight: 400;
+  text-align: left;
+  color: #ebfcfe;
+  /* text-transform: uppercase; */
+  line-height: 0.9em;
+
+
+  position: absolute;
+  top: 20%;
+  left: 69.6%;
+  /* width: 20em; */
+}
+
+/* ======================================== */
+/*                CONTENT                   */
+/* ======================================== */
+.content {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  gap: 1em;
+  position: relative;
+  top: -6em;
+  left: 0em;
+  text-align: left;
+  
+}
+
+h2 {
+  font-size: 2em;
+  /* ill adjust this later */
+  position: relative;
+  top: -2em;
+  left: 1em;
+  width: fit-content;
+  z-index: 2;
+}
+
+#project-cards {
+  margin-top: -4em;
+  margin-left: 1em;
+  padding: 0em;
+}
+
+.project-card {
+  border-radius: 0.5em;
+  box-shadow: none;
+  border: 1px solid #FFF;
+  margin: 1em;
+  padding: 0.5em;
+  width: 20em;
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+
+
+  width: 30vw;
+  max-width: 30em;
+}
+
+.project-card-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0.5em;
+  z-index: -1;
+  opacity: 30%;
+
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-card-title {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #e9f5ff;
+  text-shadow: 0.05em 0.05em 0.1em #000000,0.05em 0.05em 0.1em #000000;
+}
+
+.project-card-description {
+  padding: 10px;
+  border-radius: 0.5em;
+  font-weight: 500;
+  font-size: 0.7em;
+  text-align: left;
+  color: #e9f5ff;
+  background-color: #00000088;
+  max-height: 15em;
+  overflow-y: auto;
+
+}
+
+.project-card-description::-webkit-scrollbar {
+  display: none;
+}
+
+p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  text-align: left;
+  /* width: 100%; */
+}
+
+
+/* ======================================== */
+/*                 MOBILE                   */
+/* ======================================== */
+
+#mobile-menu-button {
+  display: none;
+}
+
+#mobile-menu-button-open {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-image: url('/icons/menu.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+}
+
+#mobile-menu-button-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url('/icons/close-menu.svg');
+  background-size: cover;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.90);
+  /* background: #1a2226dc; */
+  color: white;
+  padding: 0em;
+  box-sizing: border-box;
+  z-index: 1000;
+
+  padding-top: 0.5em;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked~.mobile-menu {
+  display: block;
+}
+
+
+/* This will hide the mini about and h1 when the window gets too narrow */
+/* THIS NEEDS TO REMAIN AT THE END OF THE CSS */
+@media (max-width: 46em) {
+  #miniabout {
+    /* display: none; */
+    position: absolute;
+    top: 32em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  h1 {
+    /* display: none; */
+    position: absolute;
+    top: -2%;
+    left: 3%;
+  }
+
+  #miniabout-button {
+    display: none;
+  }
+
+  .desktop-view {
+    display: none;
+  }
+
+  #mobile-menu-button {
+    display: inline-block;
+  }
+
+  .titlebutton {
+    font-size: 2em;
+    display: block;
+  }
+
+ .frontpage #profilepic {
+    width: 12em;
+  }
+
+  #project-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card {
+    width: 90vw;
+    /* max-width: 30em; */
+  }
+
+  .project-readmore {
+    font-size: 1.5em;
+  }
+
+  #currentpage {
+    font-size: 2.5em;
+  }
+  
+}
+
+
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  gap: 1.13em;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  margin-right: 1em;
+  align-items: center;
+  height: fit-content;
+}
+
+.content ul {
+  all: revert;
 }
